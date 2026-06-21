@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+Telugu:wght@400;500;600;700&family=Pragati+Narrow:wght@400;700&family=Noto+Sans+Telugu:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Potti Sreeramulu Pragathi";
+  src: url("https://db.onlinewebfonts.com/t/2db1c0159491ef2c021c970bf52b86ea.eot");
+  src: url("https://db.onlinewebfonts.com/t/2db1c0159491ef2c021c970bf52b86ea.eot?#iefix") format("embedded-opentype"),
+       url("https://db.onlinewebfonts.com/t/2db1c0159491ef2c021c970bf52b86ea.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/2db1c0159491ef2c021c970bf52b86ea.woff") format("woff"),
+       url("https://db.onlinewebfonts.com/t/2db1c0159491ef2c021c970bf52b86ea.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-telugu: "Potti Sreeramulu Pragathi", "Pragathi", "Pragati Narrow", "Noto Sans Telugu", sans-serif;
+  --font-pragati: "Potti Sreeramulu Pragathi", "Pragathi", "Pragati Narrow", "Noto Sans Telugu", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  
+  --color-gold-theme: #D4AF37;
+  
+  --color-gold-50: #FCF9F2;
+  --color-gold-100: #F7EFCF;
+  --color-gold-200: #ECD279;
+  --color-gold-300: #D4AF37;
+  --color-gold-400: #CCA23C;
+  --color-gold-500: #D4AF37;
+  --color-gold-600: #B28E2B;
+  --color-gold-700: #8E6E1F;
+  --color-gold-800: #664E14;
+  --color-gold-900: #1B1202;
+  
+  --color-cosmic-950: #030814;
+  --color-cosmic-900: #061126;
+  --color-cosmic-800: #0E203C;
+  --color-cosmic-700: #142D54;
+  --color-cosmic-600: #1E3F75;
+  --color-cosmic-500: #29559C;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #030814;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CCA23C;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+.font-telugu {
+  font-family: "Potti Sreeramulu Pragathi", "Pragathi", "Pragati Narrow", "Noto Sans Telugu", sans-serif !important;
+}
+
+.font-pragati {
+  font-family: "Potti Sreeramulu Pragathi", "Pragathi", "Pragati Narrow", "Noto Sans Telugu", sans-serif !important;
+}
+
+.font-serif {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+/* Global Potti Sreeramulu Pragathi Font selective rule when Telugu language is active */
+.lang-te,
+.lang-te h1,
+.lang-te h2,
+.lang-te h3,
+.lang-te h4,
+.lang-te h5,
+.lang-te h6,
+.lang-te p,
+.lang-te button,
+.lang-te a,
+.lang-te li,
+.lang-te th,
+.lang-te td,
+.lang-te select,
+.lang-te input,
+.lang-te label,
+.lang-te textarea,
+.lang-te span:not(.no-te-font) {
+  font-family: "Potti Sreeramulu Pragathi", "Pragathi", "Pragati Narrow", "Noto Sans Telugu", sans-serif !important;
+}
+
+/* Optimize Telugu character margins & heights to prevent vertical ascender/descender clipping */
+.lang-te h1,
+.lang-te h2,
+.lang-te h3,
+.lang-te h4,
+.lang-te p,
+.lang-te button,
+.lang-te a,
+.lang-te span {
+  line-height: 1.4 !important;
+}
+
+/* Ensure monospace blocks remain using monospace font rules */
+.lang-te .font-mono,
+.lang-te code,
+.lang-te .no-te-font {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+}
+
