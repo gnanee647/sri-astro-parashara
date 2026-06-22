@@ -2,30 +2,10 @@ import React from 'react';
 import { Phone, Sparkles, MessageSquare, Compass, Award } from 'lucide-react';
 import { ASTROLOGER_INFO } from '../data';
 import { useLanguage } from '../LanguageContext';
+import siddhanthiPortrait from '../../assets/siddhanthi_portrait.png';
 
 export default function Hero() {
   const { language } = useLanguage();
-  
-  const avatarPaths = [
-    '/siddhanthi_portrait.png',
-    '/siddhanthi_portrait.jpg',
-    '/siddhanthi_portrait.jpeg',
-    '/siddhanthi_portrait.webp',
-    '/siddhanthi_portrait.PNG',
-    '/siddhanthi_portrait.JPG',
-    '/siddhanthi_portrait.JPEG',
-    '/siddhanthi_portrait.WEBP',
-    '/siddhanthi.png',
-    '/siddhanthi.jpg',
-    '/siddhanthi.jpeg',
-    '/siddhanthi.webp',
-    '/siddhanthi.PNG',
-    '/siddhanthi.JPG',
-    '/siddhanthi.JPEG',
-    '/siddhanthi.WEBP',
-  ];
-  const [pathIndex, setPathIndex] = React.useState(0);
-  const hasImage = pathIndex < avatarPaths.length;
 
   const handleWhatsAppClick = () => {
     const textMessage = language === 'te'
@@ -102,64 +82,29 @@ export default function Hero() {
 
               {/* Elegant South Indian Kundali visual representation or Profile image */}
               <div className="w-full h-full rounded-full border border-gold-500/20 flex items-center justify-center relative p-3.5 overflow-hidden">
-                {hasImage ? (
-                  <div className="relative w-full h-full rounded-full overflow-hidden flex items-center justify-center bg-cosmic-950/20">
-                    {/* Embedded Traditional Chakra Grid in Background */}
-                    <div className="absolute inset-0 opacity-[0.22] pointer-events-none z-0">
-                      <svg viewBox="0 0 100 100" className="w-full h-full text-gold-300 animate-pulse" stroke="currentColor" fill="none">
-                        <line x1="50" y1="0" x2="50" y2="100" strokeWidth="0.8" />
-                        <line x1="0" y1="50" x2="100" y2="50" strokeWidth="0.8" />
-                        <polygon points="15,15 85,85" strokeWidth="0.8" strokeDasharray="2 2" />
-                        <polygon points="85,15 15,85" strokeWidth="0.8" strokeDasharray="2 2" />
-                        <circle cx="50" cy="50" r="30" strokeWidth="0.5" />
-                        <circle cx="50" cy="50" r="45" strokeWidth="0.5" strokeDasharray="3 3" />
-                      </svg>
-                    </div>
-                    {/* Profile Portrait Image */}
-                    <img
-                      src={avatarPaths[pathIndex]}
-                      alt="M. Chandra Mohan Siddhanthi Portrait"
-                      referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover object-[50%_12%] rounded-full select-none pointer-events-none filter brightness-105 contrast-[1.05] saturate-[1.02] z-10 relative transition-all duration-500 hover:scale-105"
-                      onError={() => setPathIndex(prev => prev + 1)}
-                    />
-                    {/* Inner gold frame borders / vignette shadow overlays for realistic premium appeal */}
-                    <div className="absolute inset-0 rounded-full border-4 border-gold-500/30 pointer-events-none z-20"></div>
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-t from-cosmic-950/65 via-cosmic-950/10 to-transparent pointer-events-none z-20"></div>
+                <div className="relative w-full h-full rounded-full overflow-hidden flex items-center justify-center bg-cosmic-950/20">
+                  {/* Embedded Traditional Chakra Grid in Background */}
+                  <div className="absolute inset-0 opacity-[0.22] pointer-events-none z-0">
+                    <svg viewBox="0 0 100 100" className="w-full h-full text-gold-300 animate-pulse" stroke="currentColor" fill="none">
+                      <line x1="50" y1="0" x2="50" y2="100" strokeWidth="0.8" />
+                      <line x1="0" y1="50" x2="100" y2="50" strokeWidth="0.8" />
+                      <polygon points="15,15 85,85" strokeWidth="0.8" strokeDasharray="2 2" />
+                      <polygon points="85,15 15,85" strokeWidth="0.8" strokeDasharray="2 2" />
+                      <circle cx="50" cy="50" r="30" strokeWidth="0.5" />
+                      <circle cx="50" cy="50" r="45" strokeWidth="0.5" strokeDasharray="3 3" />
+                    </svg>
                   </div>
-                ) : (
-                  <>
-                    {/* Embedded Traditional Chakra Grid */}
-                    <div className="absolute inset-10 opacity-20 pointer-events-none">
-                      <svg viewBox="0 0 100 100" className="w-full h-full text-gold-300" stroke="currentColor" fill="none">
-                        <rect x="5" y="5" width="90" height="90" strokeWidth="1.5" />
-                        <rect x="27.5" y="27.5" width="45" height="45" strokeWidth="1" />
-                        <line x1="27.5" y1="5" x2="27.5" y2="95" strokeWidth="1" />
-                        <line x1="72.5" y1="5" x2="72.5" y2="95" strokeWidth="1" />
-                        <line x1="5" y1="27.5" x2="95" y2="27.5" strokeWidth="1" />
-                        <line x1="5" y1="72.5" x2="95" y2="72.5" strokeWidth="1" />
-                      </svg>
-                    </div>
-
-                    <div className="text-center z-10 p-4">
-                      <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-gold-500/10 to-gold-500/25 border-2 border-gold-500/40 flex items-center justify-center mx-auto mb-4 relative shadow-lg">
-                        <Compass className="w-10 h-10 sm:w-12 sm:h-12 text-gold-400 rotate-12 animate-pulse" />
-                        {/* Ring sparkles */}
-                        <span className="absolute top-1 right-2 text-gold-300 text-xs text-bold select-none">ॐ</span>
-                      </div>
-                      <h4 className="font-serif text-sm sm:text-base font-bold text-gold-300 uppercase tracking-widest">
-                        {language === 'te' ? 'సిద్ధాంత నిర్ణయం' : 'VEDIC SIDDHANTA'}
-                      </h4>
-                      <p className="text-[10px] text-gray-400 tracking-wide mt-1.5 font-mono">
-                        ESTD. HINDUPUR 1995
-                      </p>
-                      <div className="mt-2.5 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold-400/10 border border-gold-400/20 text-[9px] font-mono text-gold-300 uppercase tracking-widest">
-                        <span className="w-1.5 h-1.5 rounded-full bg-gold-400 animate-ping"></span>
-                        <span>{language === 'te' ? 'హస్తలిఖితం' : '100% Hand-Calculated'}</span>
-                      </div>
-                    </div>
-                  </>
-                )}
+                  {/* Profile Portrait Image */}
+                  <img
+                    src={siddhanthiPortrait}
+                    alt="M. Chandra Mohan Siddhanthi Portrait"
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover object-[50%_12%] rounded-full select-none pointer-events-none filter brightness-105 contrast-[1.05] saturate-[1.02] z-10 relative transition-all duration-500 hover:scale-105"
+                  />
+                  {/* Inner gold frame borders / vignette shadow overlays for realistic premium appeal */}
+                  <div className="absolute inset-0 rounded-full border-4 border-gold-500/30 pointer-events-none z-20"></div>
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-t from-cosmic-950/65 via-cosmic-950/10 to-transparent pointer-events-none z-20"></div>
+                </div>
               </div>
 
               {/* Little detail badge */}

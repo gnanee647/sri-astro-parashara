@@ -1,6 +1,7 @@
 import React from 'react';
 import { Award, MessageSquare, ShieldCheck, Check } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
+import siddhanthiPortrait from '../../assets/siddhanthi_portrait.png';
 
 export default function About() {
   const { language } = useLanguage();
@@ -25,16 +26,31 @@ export default function About() {
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           
-          {/* Left Column: Short Introduction (maximum 4 lines as requested) */}
+          {/* Left Column: Short Introduction with Portrait Image */}
           <div className="md:col-span-6 space-y-4">
-            <h3 className="font-serif text-lg sm:text-xl font-bold text-gold-300">
-              {language === 'te' ? 'జ్యోతిష్య రత్న ఎమ్. చంద్ర మోహన్ సిద్ధాంతి' : 'Jyothishya Ratna M. Chandra Mohan Siddhanthi'}
-            </h3>
-            <p className={`text-slate-300 text-xs sm:text-sm leading-relaxed ${language === 'te' ? 'font-telugu' : 'font-sans'}`}>
-              {language === 'te'
-                ? 'గత మూడు దశాబ్దాలుగా హిందూపురంలో వేద శాస్త్ర పీఠికానుసారంగా నిఖార్సైన వైదిక మార్గదర్శకత్వాన్ని అందిస్తున్నారు. వేలాది కుటుంబాలకు ప్రాచీన పరాశర సిద్ధాంత విశ్లేషణల ద్వారా విశ్వసనీయ పరిష్కారాలు చూపించారు.'
-                : 'Over three decades of uncompromised traditional astrological counseling based out of Hindupur, AP. He has guided thousands of families using manual, scripture-authentic calculations to ensure peace and prosperity.'}
-            </p>
+            <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start text-center sm:text-left">
+              {/* Small Portrait Image */}
+              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-2 border-gold-500/30 overflow-hidden shrink-0 shadow-lg relative bg-cosmic-950/40">
+                <img
+                  src={siddhanthiPortrait}
+                  alt="M. Chandra Mohan Siddhanthi"
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover object-[50%_12%] rounded-full select-none pointer-events-none filter brightness-105 contrast-[1.05]"
+                />
+                <div className="absolute inset-0 rounded-full border border-gold-500/10 pointer-events-none"></div>
+              </div>
+              
+              <div className="space-y-3">
+                <h3 className="font-serif text-lg sm:text-xl font-bold text-gold-300">
+                  {language === 'te' ? 'జ్యోతిష్య రత్న ఎమ్. చంద్ర మోహన్ సిద్ధాంతి' : 'Jyothishya Ratna M. Chandra Mohan Siddhanthi'}
+                </h3>
+                <p className={`text-slate-300 text-xs sm:text-sm leading-relaxed ${language === 'te' ? 'font-telugu' : 'font-sans'}`}>
+                  {language === 'te'
+                    ? 'గత మూడు దశాబ్దాలుగా హిందూపురంలో వేద శాస్త్ర పీఠికానుసారంగా నిఖార్సైన వైదిక మార్గదర్శకత్వాన్ని అందిస్తున్నారు. వేలాది కుటుంబాలకు ప్రాచీన పరాశర సిద్ధాంత విశ్లేషణల ద్వారా విశ్వసనీయ పరిష్కారాలు చూపించారు.'
+                    : 'Over three decades of uncompromised traditional astrological counseling based out of Hindupur, AP. He has guided thousands of families using manual, scripture-authentic calculations to ensure peace and prosperity.'}
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Right Column: Key facts displayed as highly polished minimal grid blocks */}
