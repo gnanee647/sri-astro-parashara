@@ -32,7 +32,7 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
 
   const navItems = [
     { id: 'home', label: 'Home', telugu: 'హోమ్' },
-    { id: 'about', label: 'About', telugu: 'పరిచయం' },
+    { id: 'about', label: 'About', telugu: 'పరిచయము' },
     { id: 'services', label: 'Services', telugu: 'సేవలు' },
     { id: 'testimonials', label: 'Reviews', telugu: 'స్పందనలు' },
     { id: 'contact', label: 'Contact', telugu: 'సంప్రదించండి' }
@@ -77,9 +77,23 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
             onClick={() => handleNavClick('home')}
             className="flex items-center space-x-2 sm:space-x-3.5 cursor-pointer group min-w-0"
           >
-            <div className="relative flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 border-2 border-gold-500 rotate-45 group-hover:scale-105 transition-all duration-300 shrink-0">
-              <span className="text-gold-500 -rotate-45 font-bold text-sm sm:text-lg select-none">ॐ</span>
-            </div>
+            <svg viewBox="0 0 100 100" className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 group-hover:scale-110 transition-all duration-300 shrink-0 filter drop-shadow-[0_0_3px_rgba(212,175,55,0.4)]" fill="none" stroke="currentColor" strokeWidth="1.5" id="header-sri-chakram-logo">
+              {/* Outer Square Gates (Bhupuram) */}
+              <path d="M 15 15 L 40 15 L 40 10 L 60 10 L 60 15 L 85 15 L 85 40 L 90 40 L 90 60 L 85 60 L 85 85 L 60 85 L 60 90 L 40 90 L 40 85 L 15 85 L 15 60 L 10 60 L 10 40 L 15 40 Z" strokeWidth="1.5" className="stroke-gold-400" />
+              {/* Concentric Circles */}
+              <circle cx="50" cy="50" r="32" className="stroke-gold-500" strokeWidth="1.2" />
+              <circle cx="50" cy="50" r="28" className="stroke-gold-400" strokeWidth="1.0" />
+              {/* Inner Lotus Petal circle / 8-pointed star pattern */}
+              <circle cx="50" cy="50" r="24" className="stroke-gold-500" strokeWidth="0.8" strokeDasharray="3 2" />
+              {/* Interactive/detailed geometric Sri Yantra representation */}
+              <polygon points="50,26 28,68 72,68" className="stroke-gold-300" strokeWidth="1.0" />
+              <polygon points="50,74 28,32 72,32" className="stroke-gold-300" strokeWidth="1.0" />
+              <polygon points="50,34 35,60 65,60" className="stroke-gold-400" strokeWidth="0.8" />
+              <polygon points="50,66 35,40 65,40" className="stroke-gold-400" strokeWidth="0.8" />
+              <polygon points="50,42 41,54 59,54" className="stroke-gold-500" strokeWidth="0.7" />
+              {/* Bindu - Central Dot */}
+              <circle cx="50" cy="50" r="2.5" className="fill-gold-400 stroke-none" />
+            </svg>
             <div className="flex flex-col min-w-0 justify-center">
               <span className={`${language === 'te' ? 'font-pragati' : 'font-serif'} text-[13px] xs:text-base sm:text-lg md:text-xl font-bold tracking-wider sm:tracking-[0.12em] text-gold-300 uppercase leading-snug truncate pb-0.5`}>
                 {language === 'te' ? 'శ్రీ ఆస్ట్రోపరాశర' : 'SRI ASTROPARASHARA'}

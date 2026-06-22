@@ -3,7 +3,7 @@ import { Service, Testimonial, FAQItem } from './types';
 export const ASTROLOGER_INFO = {
   name: 'M. Chandra Mohan Siddhanthi',
   title: 'Sri AstroParashara',
-  experience: '30+ Years of Traditional Practice',
+  experience: '32+ Years of Traditional Practice',
   degree: 'Vedic Jyotishya Praveena & Siddhanthi',
   specialty: 'Traditional Parashara Vedic Astrology (పరాశర సిద్ధాంతం)',
   languages: ['Telugu (తెలుగు)', 'English (ఇంగ్లీష్)'],
@@ -363,7 +363,7 @@ export const FAQ_DATA: Record<'te' | 'en', FAQItem[]> = {
 export const BENEFITS: Record<'te' | 'en', { title: string; description: string }[]> = {
   te: [
     {
-      title: '30+ సంవత్సరాల విశేష అనుభవం',
+      title: '32+ సంవత్సరాల విశేష అనుభవం',
       description: 'తరతరాలుగా వస్తున్న కుటుంబ సాంప్రదాయ వనరులతో నిర్మితమైన జ్యోతిష్య పరిజ్ఞానం మరియు వందలాది పక్కా విశ్లేషణల రుజువు.'
     },
     {
@@ -381,7 +381,7 @@ export const BENEFITS: Record<'te' | 'en', { title: string; description: string 
   ],
   en: [
     {
-      title: '30+ Years of Genuine Expertise',
+      title: '32+ Years of Genuine Expertise',
       description: 'Generations of trusted traditional astrological lineage with highly accurate predictions and authentic astrological knowledge.'
     },
     {

@@ -8,8 +8,8 @@ export default function WhyChooseUs() {
   const facts = [
     {
       id: 1,
-      title_te: '30+ సంవత్సరాల అనుభవం',
-      title_en: '30+ Years Experience',
+      title_te: '32+ సంవత్సరాల అనుభవం',
+      title_en: '32+ Years Experience',
       desc_te: 'గత మూడు దశాబ్దాలుగా వేల మంది భక్తులకు మార్గదర్శకం చూపిన అసలైన వేద సిద్ధాంత అనుభవం.',
       desc_en: 'Three decades of authentic Vedic horoscope evaluations and traditional counseling.',
       icon: <Award className="w-5 h-5 text-gold-400" />

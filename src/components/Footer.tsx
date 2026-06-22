@@ -30,7 +30,7 @@ export default function Footer({ setActiveTab, activeTab }: FooterProps) {
 
   const footerLinks = [
     { id: 'home', label: language === 'te' ? 'హోమ్' : 'Home' },
-    { id: 'about', label: language === 'te' ? 'పరిచయం' : 'About Siddhanthi' },
+    { id: 'about', label: language === 'te' ? 'పరిచయము' : 'About Siddhanthi' },
     { id: 'services', label: language === 'te' ? 'సేవలు' : 'Services' },
     { id: 'testimonials', label: language === 'te' ? 'స్పందనలు' : 'Reviews' },
     { id: 'contact', label: language === 'te' ? 'హిందూపురం కార్యాలయం' : 'Contact Office' }
@@ -47,9 +47,23 @@ export default function Footer({ setActiveTab, activeTab }: FooterProps) {
           {/* Column 1: Brand & Bio */}
           <div className="md:col-span-12 lg:col-span-5 space-y-4">
             <div className="flex items-center space-x-3.5 cursor-pointer group" onClick={() => handleNavClick('home')}>
-              <div className="relative flex items-center justify-center w-8 h-8 border-2 border-gold-500 rotate-45 group-hover:scale-105 transition-all duration-300">
-                <span className="text-gold-500 -rotate-45 font-bold text-xs select-none">ॐ</span>
-              </div>
+              <svg viewBox="0 0 100 100" className="w-8 h-8 text-gold-500 group-hover:scale-110 transition-all duration-300 shrink-0 filter drop-shadow-[0_0_3px_rgba(212,175,55,0.4)]" fill="none" stroke="currentColor" strokeWidth="1.5" id="footer-sri-chakram-logo">
+                {/* Outer Square Gates (Bhupuram) */}
+                <path d="M 15 15 L 40 15 L 40 10 L 60 10 L 60 15 L 85 15 L 85 40 L 90 40 L 90 60 L 85 60 L 85 85 L 60 85 L 60 90 L 40 90 L 40 85 L 15 85 L 15 60 L 10 60 L 10 40 L 15 40 Z" strokeWidth="1.5" className="stroke-gold-400" />
+                {/* Concentric Circles */}
+                <circle cx="50" cy="50" r="32" className="stroke-gold-500" strokeWidth="1.2" />
+                <circle cx="50" cy="50" r="28" className="stroke-gold-400" strokeWidth="1.0" />
+                {/* Inner Lotus Petal circle / 8-pointed star pattern */}
+                <circle cx="50" cy="50" r="24" className="stroke-gold-500" strokeWidth="0.8" strokeDasharray="3 2" />
+                {/* Interactive/detailed geometric Sri Yantra representation */}
+                <polygon points="50,26 28,68 72,68" className="stroke-gold-300" strokeWidth="1.0" />
+                <polygon points="50,74 28,32 72,32" className="stroke-gold-300" strokeWidth="1.0" />
+                <polygon points="50,34 35,60 65,60" className="stroke-gold-400" strokeWidth="0.8" />
+                <polygon points="50,66 35,40 65,40" className="stroke-gold-400" strokeWidth="0.8" />
+                <polygon points="50,42 41,54 59,54" className="stroke-gold-500" strokeWidth="0.7" />
+                {/* Bindu - Central Dot */}
+                <circle cx="50" cy="50" r="2.5" className="fill-gold-400 stroke-none" />
+              </svg>
               <span className="font-serif text-base font-bold tracking-[0.15em] text-gold-300 uppercase">
                 {language === 'te' ? 'శ్రీ ఆస్ట్రోపరాశర' : 'SRI ASTROPARASHARA'}
               </span>
@@ -57,8 +71,8 @@ export default function Footer({ setActiveTab, activeTab }: FooterProps) {
             
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-md">
               {language === 'te' 
-                ? 'శ్రీ ఎమ్. చంద్ర మోహన్ సిద్ధాంతి గారి ఆధ్వర్యంలో నడుస్తున్న ఈ శ్రీ ఆస్ట్రోపరాశర వైదిక సేవా కేంద్రం హిందూపురంలో గత 30 సంవత్సరాలుగా అపారమైన కీర్తిని సంపాదించుకుంది. నిష్కల్మషమైన వైదిక సంప్రదాయ గణితం, నమ్మకమైన విశ్లేషణ, సరళమైన మరియు మితవ్యయ పరిహారాలకు ఇది నిదర్శనం.' 
-                : 'Led by M. Chandra Mohan Siddhanthi Garu with 30+ Years of traditional Vedic experience in Hindupur Mandal, Andhra Pradesh. Dedicated to manual computations, high ethical integrity, and authentic remedies.'}
+                ? 'శ్రీ ఎమ్. చంద్ర మోహన్ సిద్ధాంతి గారి ఆధ్వర్యంలో నడుస్తున్న ఈ శ్రీ ఆస్ట్రోపరాశర వైదిక సేవా కేంద్రం హిందూపురంలో గత 32 సంవత్సరాలుగా అపారమైన కీర్తిని సంపాదించుకుంది. నిష్కల్మషమైన వైదిక సంప్రదాయ గణితం, నమ్మకమైన విశ్లేషణ, సరళమైన మరియు మితవ్యయ పరిహారాలకు ఇది నిదర్శనం.' 
+                : 'Led by M. Chandra Mohan Siddhanthi Garu with 32+ Years of traditional Vedic experience in Hindupur Mandal, Andhra Pradesh. Dedicated to manual computations, high ethical integrity, and authentic remedies.'}
             </p>
 
             <span className="inline-flex px-3 py-1 bg-gold-900/30 border border-gold-500/20 text-gold-300 text-[10px] font-mono font-medium rounded-full">

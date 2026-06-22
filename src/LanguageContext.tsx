@@ -15,7 +15,7 @@ export const translations: Record<Language, Record<string, string>> = {
   te: {
     // Nav & Common
     'nav.home': 'హోమ్',
-    'nav.about': 'పరిచయం',
+    'nav.about': 'పరిచయము',
     'nav.services': 'సేవలు',
     'nav.testimonials': 'స్పందనలు',
     'nav.faq': 'ప్రశ్నోత్తరాలు',
@@ -24,7 +24,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'cta.call_siddhanthi_ji': 'సిద్ధాంతి గారికి కాల్ చేయండి',
     'cta.whatsapp_enquiry': 'వాట్సాప్ విచారణ',
     'cta.book_consultation': 'సంప్రదింపు బుక్ చేయండి',
-    'cta.read_bio': 'సిద్ధాంతి గారి పరిచయం చదవండి',
+    'cta.read_bio': 'సిద్ధాంతి గారి పరిచయము చదవండి',
     'cta.schedule_audit': 'సమయం ఖరారు చేయండి',
     'cta.explore_services': 'సేవలను అన్వేషించండి',
     'cta.submit_details': 'వివరాలను సమర్పించండి',
@@ -32,19 +32,19 @@ export const translations: Record<Language, Record<string, string>> = {
     'status.telugu_only': 'తెలుగులో మాత్రమే సంప్రదింపులు',
 
     // Hero Section
-    'hero.badge': '30+ సంవత్సరాల సాంప్రదాయ వైదిక అనుభవం',
+    'hero.badge': '32+ సంవత్సరాల సాంప్రదాయ వైదిక అనుభవం',
     'hero.expert_areas': 'ఉద్యోగ • వివాహ • వాస్తు • జాతక నిర్ణయ నిపుణులు',
     'hero.sub_para_1': 'మీ జీవితంలో ఎదురయ్యే ముఖ్యమైన ఘట్టాలను వైదిక మార్గదర్శకత్వంలో విజయవంతంగా నడిపించండి.',
     'hero.sub_para_2': 'సాంప్రదాయ పరాశర సిద్ధాంతం (పరాశర సిద్ధాంతం) ఆధారంగా, మేము అత్యంత ఖచ్చితమైన విశ్లేషణను మరియు సరళమైన సాంప్రదాయ పరిహారాలను కేవలం తెలుగులో మాత్రమే అందిస్తాము.',
 
     // About Section
-    'about.experience': '30+ సంవత్సరాల అనుభవం',
+    'about.experience': '32+ సంవత్సరాల అనుభవం',
     'about.subtitle': 'సాంప్రదాయ జ్యోతిష్య నిపుణులు',
     'about.heading': 'ప్రఖ్యాత సిద్ధాంతి మరియు మార్గదర్శకులు',
     'about.para1': 'గౌరవనీయులైన వైదిక సిద్ధాంతి శ్రీ జ్యోతిష్య ప్రవీణ ఎమ్. చంద్ర మోహన్ సిద్ధాంతి గారు గత మూడు దశాబ్దాలుగా జ్యోతిష్య రంగంలో విశేష సేవలు అందిస్తున్నారు. పరాశర జ్యోతిష్య సిద్ధాంతాన్ని పునాదిగా చేసుకుని, వేలాది కుటుంబాలకు సరైన మార్గదర్శకత్వాన్ని అందించారు.',
     'about.para2': 'పరాశర మహర్షి ప్రవచించిన ప్రాచీన నియమాల ఆధారంగా జాతక చక్ర విశ్లేషణను హస్తలాఘవంతో కాకుండా శాస్త్రీయంగా లెక్కిస్తారు. వివాహం ఆలస్యం కావడం, కొలువులో సమస్యలు, వ్యాపారంలో ఒడిదుడుకులు, వాస్తు దోషాలు మరియు శుభ సమయాల నిర్ణయాల్లో అత్యంత విశ్వసనీయమైన సేవలను అందిస్తున్నారు.',
     'about.quick_facts': 'ముఖ్యమైన విశేషాలు',
-    'about.fact_experience': '30+ సంవత్సరాల నిరంతర సాధన',
+    'about.fact_experience': '32+ సంవత్సరాల నిరంతర సాధన',
     'about.fact_authenticity': 'ఖరీదైన రాళ్ళు, అనవసర పూజలు లేవు - కేవలం సరళమైన స్వంత పరిహారాలు మాత్రమే',
     'about.fact_telugu': 'తెలుగు సంస్కృతి, జీవన విధానాలకు తగినట్లుగా సంప్రదింపులు',
     'about.fact_worldwide': 'ఆన్‌లైన్ ద్వారా ప్రపంచవ్యాప్తంగా వందలాది మందికి సేవలు',
@@ -106,7 +106,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'contact.online_desc': 'ప్రపంచవ్యాప్తంగా వాట్సాప్ మరియు ఫోన్ కాల్ ద్వారా జాతక సేవలు లభించును',
 
     // Footer
-    'footer.established': 'పరిపాలన ప్రారంభం: 1994 • అనుభవం: 30+ సంవత్సరాలు',
+    'footer.established': 'పరిపాలన ప్రారంభం: 1994 • అనుభవం: 32+ సంవత్సరాలు',
     'footer.disclaimer': 'గమనిక: సిద్ధాంతి గారి సూచనలు సాంప్రదాయ వైదిక శాస్త్ర నియమాల ప్రకారం అందించబడతాయి. విశ్వాసంతో పాటించే వారికి ఖచ్చితమైన ఫలితాలు గోచరిస్తాయి.'
   },
   en: {
@@ -129,19 +129,19 @@ export const translations: Record<Language, Record<string, string>> = {
     'status.telugu_only': 'Telugu Only',
 
     // Hero Section
-    'hero.badge': '30+ Years of Traditional Vedic Excellence',
+    'hero.badge': '32+ Years of Traditional Vedic Excellence',
     'hero.expert_areas': 'Career • Marriage • Vastu • Horoscope Analysis Specialist',
     'hero.sub_para_1': 'Navigate your life’s milestones with premium, high-integrity astrology services.',
     'hero.sub_para_2': 'Based on the traditional Parashara Siddhanta (పరాశర సిద్ధాంతం), we provide accurate predictions and clean, inexpensive traditional remedies exclusively in Telugu.',
 
     // About Section
-    'about.experience': '30+ Years of Experience',
+    'about.experience': '32+ Years of Experience',
     'about.subtitle': 'Traditional Astrologer & Advisor',
     'about.heading': 'Renowned Siddhanthi & Guide',
     'about.para1': 'Respected Vedic Astrologer, Jyotishya Praveena Sri M. Chandra Mohan Siddhanthi Garu has been rendering outstanding spiritual guidance for over three decades. Grounded strongly in Parashara Jyotishya Siddhanta, he is a trusted beacon for thousands of families.',
     'about.para2': 'Instead of computer-generated automated calculations, his chart evaluations are meticulously custom-tallied using planetary formulas established by Maharishi Parashara. He provides clear directions on wedding matchmaking, career promotions, business stability, house vastu, and auspicious timings.',
     'about.quick_facts': 'Quick Highlights',
-    'about.fact_experience': 'Over 30 years of uninterrupted traditional practice',
+    'about.fact_experience': 'Over 32 years of uninterrupted traditional practice',
     'about.fact_authenticity': 'No commercial fears or expensive gems - emphasis on simple daily stotra remedies',
     'about.fact_telugu': 'Localized consulting in Telugu matches cultural paradigms perfectly',
     'about.fact_worldwide': 'State-of-the-art virtual consulting serves Telugu diaspora across the globe',
@@ -203,7 +203,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'contact.online_desc': 'Available worldwide via WhatsApp Call & Voice Recording briefs',
 
     // Footer
-    'footer.established': 'Established: 1994 • Experience: 30+ Years',
+    'footer.established': 'Established: 1994 • Experience: 32+ Years',
     'footer.disclaimer': 'Disclaimer: The consultations and suggestions offered by Sri Siddhanthi Garu are based on ancient traditional rules of Vedic Astrology. Authentic remedies show the best results when pursued with positive intent.'
   }
 };
