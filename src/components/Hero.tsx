@@ -109,7 +109,7 @@ export default function Hero() {
 
               {/* Little detail badge */}
               <div className="absolute -bottom-3 inset-x-0 mx-auto w-max px-4 py-1.5 rounded-full bg-cosmic-850/90 border border-gold-500/30 text-[9px] tracking-widest text-gold-200 uppercase font-mono shadow-md z-20">
-                {language === 'te' ? 'పరాశర జ్యోతిష్య నిలయం' : 'Parashara Vedic Center'}
+                {language === 'te' ? 'ఎమ్. చంద్ర మోహన్ సిద్ధాంతి' : 'M. Chandra Mohan Siddhanthi'}
               </div>
             </div>
           </div>
