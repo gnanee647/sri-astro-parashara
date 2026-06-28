@@ -16,12 +16,12 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-16 bg-gradient-to-b from-cosmic-950 to-cosmic-900 text-white relative border-b border-gold-500/10"
+      className="py-10 bg-gradient-to-b from-cosmic-950 to-cosmic-900 text-white relative border-b border-gold-500/10"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 w-full">
         
         {/* Section Heading */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-6">
           <span className="text-[10px] sm:text-xs font-semibold text-gold-400 uppercase tracking-widest font-mono">
             {language === 'te' ? 'సంప్రదించండి' : 'Schedule Booking'}
           </span>

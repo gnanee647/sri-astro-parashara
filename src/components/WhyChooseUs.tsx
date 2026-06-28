@@ -43,12 +43,12 @@ export default function WhyChooseUs() {
   return (
     <section
       id="why-choose-us"
-      className="py-16 bg-gradient-to-b from-cosmic-900 to-cosmic-950 text-white relative border-b border-gold-500/10"
+      className="py-10 bg-gradient-to-b from-cosmic-900 to-cosmic-950 text-white relative border-b border-gold-500/10"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 w-full">
         
         {/* Section Heading */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-6">
           <span className="text-[10px] sm:text-xs font-semibold text-gold-400 uppercase tracking-widest font-mono">
             {language === 'te' ? 'మా ప్రత్యేకత' : 'Vedic Trustworthiness'}
           </span>

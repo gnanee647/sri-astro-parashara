@@ -32,12 +32,13 @@ export default function Footer({ setActiveTab, activeTab }: FooterProps) {
     { id: 'home', label: language === 'te' ? 'హోమ్' : 'Home' },
     { id: 'about', label: language === 'te' ? 'పరిచయము' : 'About Siddhanthi' },
     { id: 'services', label: language === 'te' ? 'సేవలు' : 'Services' },
+    { id: 'yantras', label: language === 'te' ? 'పవిత్ర యంత్రాలు' : 'Sacred Yantras' },
     { id: 'testimonials', label: language === 'te' ? 'స్పందనలు' : 'Reviews' },
     { id: 'contact', label: language === 'te' ? 'హిందూపురం కార్యాలయం' : 'Contact Office' }
   ];
 
   return (
-    <footer id="main-footer" className="bg-cosmic-950 border-t border-gold-500/20 text-gray-300 py-16 relative overflow-hidden">
+    <footer id="main-footer" className="bg-cosmic-950 border-t border-gold-500/20 text-gray-300 py-10 relative overflow-hidden">
       {/* Decorative Golden Star Map Circle */}
       <div className="absolute -bottom-20 -right-20 w-[200px] h-[200px] rounded-full border border-gold-500/10 pointer-events-none"></div>
 
@@ -151,7 +152,7 @@ export default function Footer({ setActiveTab, activeTab }: FooterProps) {
         </div>
 
         {/* Traditional Vedic Spiritual Disclaimer block */}
-        <div className="mt-12 pt-8 border-t border-gold-500/10 text-[10px] sm:text-xs text-center text-slate-500 space-y-4 max-w-4xl mx-auto leading-relaxed">
+        <div className="mt-8 pt-6 border-t border-gold-500/10 text-[10px] sm:text-xs text-center text-slate-500 space-y-4 max-w-4xl mx-auto leading-relaxed">
           <p>
             <strong>{language === 'te' ? 'జ్యోతిష్య ఫలితాల విధివిధానాల గమనిక:' : 'Vedic Astrological Disclaimer (జాతక ఫలితాల నివేదిక గమనిక):'}</strong>{' '}
             {language === 'te' 

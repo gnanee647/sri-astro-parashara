@@ -34,6 +34,7 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
     { id: 'home', label: 'Home', telugu: 'హోమ్' },
     { id: 'about', label: 'About', telugu: 'పరిచయము' },
     { id: 'services', label: 'Services', telugu: 'సేవలు' },
+    { id: 'yantras', label: 'Yantras', telugu: 'యంత్రాలు' },
     { id: 'testimonials', label: 'Reviews', telugu: 'స్పందనలు' },
     { id: 'contact', label: 'Contact', telugu: 'సంప్రదించండి' }
   ];
